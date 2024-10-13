@@ -1,0 +1,252 @@
+/* Basic Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f495f4;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    background: linear-gradient(to right, #d90070, #c13fa9);
+    color: #fff;
+    padding: 10px 0;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.left {
+    font-size: 44px;
+    text-align: center;
+    color: rgb(62, 62, 62);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Add wrap for smaller screens */
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #d90070 url('hero-bg.jpg') no-repeat center center;
+    /* Combined background declaration */
+    background-size: cover;
+    color: white;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+}
+
+.services {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #d90070, #feb47b);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 650px;
+    margin-right: 650px;
+    margin-top: 3px;
+
+}
+
+.services:before,
+.services:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: rgb(62, 62, 62);
+    position: relative;
+    z-index: 2;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.services ul li {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    /* added background transition */
+
+}
+
+.services ul li:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 2em;
+    }
+
+    .services ul li {
+        font-size: 1.1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+}
+
+#contact {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #d90070, #feb47b);
+    text-align: center;
+    color: black;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: rgb(62, 62, 62);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #d90070;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Adding transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #d90070;
+    box-shadow: 0 0 5px rgba(217, 0, 112, 0.5);
+}
+
+input[type="submit"],
+button {
+    background: #ff006a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #0056b3;
+    /* Change to a color that fits the theme */
+}
+
+footer {
+    background: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BrightSpark</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="left">BrightSpark Marketing</h1>
+        <nav class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Our Marketing Agency</h1>
+            <p>BrightSpark, your partner in achieving marketing excellence.</p><br>
+            <button onclick="location.href='#contact'">Get Started</button>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-content">
+
+                <p>We offer a range of marketing services to help your business grow.</p>
+                <ul>
+                    <li>
+                        <h3>Consulting and Strategy</h3>
+                    </li>
+                    <li>
+                        <h3>Web Development and Design</h3>
+                    </li>
+                    <li>
+                        <h3>Digital Marketing</h3>
+                    </li>
+                    <li>
+                        <h3>Market Research and Analysis</h3>
+                    </li>
+                    <li>
+                        <h3>Performance Analytics</h3>
+                    </li>
+                </ul>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Send Us a Message</h2>
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="number">Phone:</label>
+                    <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+
+                    <label for="dropdown">How can we help you?</label>
+                    <select id="dropdown" name="option" required>
+                        <option value="disabled selected">Select an option</option>
+                        <option value="Consulting">Consulting and Strategy</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Market Analysis">Market Research and Analysis</option>
+                        <option value="Performance Analytics">Performance Analytics</option>
+                        <option value="Other">Other Services</option>
+                    </select>
+
+                    <label for="comments">Please describe your request briefly:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50"
+                        placeholder="Enter your thoughts here"></textarea>
+
+                    <button type="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <a href="https://www.linkedin.com/in/nancybenkacem" target="_blank">@Nancy Ben Kacem</a>. All
+            rights reserved.</p>
+        <p>
+            <a href="mailto:nancy.benkacem@outlook.com">Send us an email</a>
+        </p>
+    </footer>
